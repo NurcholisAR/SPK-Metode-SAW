@@ -1,0 +1,22 @@
+
+
+$k = new M_Kelas();
+$j = new M_Jurusan();
+$kelas = $k->get_kelas();
+$jurusan = $j->get_jurusan();
+<div class="form-inline">
+                <label>Kelas : </label>
+                <select name="kelas_alternatif" id="kelas_alternatif" onchange="filter()" class="form-control custom-select mr-2">
+                    <option value="">SEMUA DATA</option>
+                    <?php foreach ($kelas as $kl) : ?>
+                        <option value="<?= $kl['kelas_alternatif_id']; ?>"><?= $kl['nama_kelas']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+                <label>Jurusan : </label>
+                <select name="jurusan_alternatif" id="jurusan_alternatif" onchange="filter()" class="form-control custom-select">
+                    <option value="0">SEMUA DATA</option>
+                    <?php foreach ($jurusan as $kl) : ?>
+                        <option value="<?= $kl['jurusan_alternatif_id']; ?>"><?= $kl['nama_jurusan']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
