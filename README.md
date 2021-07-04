@@ -24,8 +24,3 @@ and any database settings.
 PHP version 7.2 or higher is required
 
 
-## kalo ada error :
-
-Fatal error: require(): Failed opening required '\SPK-Metode-SAW\app\Config/../../vendor/codeigniter4/framework/system/bootstrap.php'
-
-ketik <code>composer install</code> di terminal
